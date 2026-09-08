@@ -5,6 +5,7 @@ export const SITE = {
     "NEVER is a private recovery app for quitting compulsive porn use. Track your streak, ride out urges, and rewire the habit — in one place.",
   keywords:
     "quit porn, porn addiction recovery, PMO recovery, streak tracker, urge surfing, nofap app, dopamine detox, never app",
+  url: "https://nishit-dave.github.io/never",
 };
 
 export const APP_STORE_URL = "https://apps.apple.com/app/id6797847280";

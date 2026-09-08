@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getPost, getRelated, type PostBlock } from "@/data/posts";
-import { formatDate } from "@/lib/utils";
+import { asset, formatDate } from "@/lib/utils";
 import { SITE } from "@/data/site";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -32,7 +32,7 @@ function BlogPost() {
     datePublished: post.date,
     author: { "@type": "Organization", name: SITE.name },
     publisher: { "@type": "Organization", name: SITE.name },
-    image: post.cover,
+    image: asset(post.cover),
   };
 
   return (
@@ -57,7 +57,7 @@ function BlogPost() {
         </header>
         <div className="mx-auto mt-10 max-w-4xl px-5 sm:px-8">
           <img
-            src={post.cover}
+            src={asset(post.cover)}
             alt={post.coverAlt}
             className="aspect-16/8 w-full rounded-[28px] object-cover"
             width={1400}

@@ -1,6 +1,7 @@
 import {
   createRootRoute,
   HeadContent,
+  Link,
   Outlet,
   Scripts,
 } from "@tanstack/react-router";
@@ -8,6 +9,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { SiteShell } from "@/components/site-chrome";
 import { SITE } from "@/data/site";
+import { asset } from "@/lib/utils";
 import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
@@ -23,11 +25,11 @@ export const Route = createRootRoute({
       { name: "author", content: "NEVER" },
     ],
     links: [
-      { rel: "icon", type: "image/png", href: "/favicon.png" },
-      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
+      { rel: "icon", type: "image/png", href: asset("/favicon.png") },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: asset("/favicon-32.png") },
       { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: "/__grok/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      { rel: "manifest", href: asset("/__grok/manifest.webmanifest") },
+      { rel: "apple-touch-icon", href: asset("/apple-touch-icon.png") },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap",
@@ -67,9 +69,9 @@ function NotFound() {
       <p className="mt-3 text-ink-soft">
         The link may be old. The recovery guides are still here.
       </p>
-      <a href="/" className="mt-8 text-sm font-semibold text-accent underline-offset-4 hover:underline">
+      <Link to="/" className="mt-8 text-sm font-semibold text-accent underline-offset-4 hover:underline">
         Back to NEVER
-      </a>
+      </Link>
     </main>
   );
 }

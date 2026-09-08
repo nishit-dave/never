@@ -4,6 +4,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { APP_STORE_URL, NAV, SITE } from "@/data/site";
 import { AppStoreBadge } from "@/components/app-store-badge";
+import { asset } from "@/lib/utils";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ export function SiteHeader() {
           onClick={() => setOpen(false)}
         >
           <img
-            src="/app/logo-mark.png"
+            src={asset("/app/logo-mark.png")}
             alt=""
             width={32}
             height={32}
@@ -126,7 +127,7 @@ export function SiteFooter() {
         <div className="md:col-span-1">
           <p className="flex items-center gap-2.5 text-[17px] font-extrabold tracking-[0.18em]">
             <img
-              src="/app/logo-mark.png"
+              src={asset("/app/logo-mark.png")}
               alt=""
               width={28}
               height={28}

@@ -28,7 +28,7 @@ import {
 import { POSTS } from "@/data/posts";
 import { buttonVariants } from "@/components/ui/button";
 import { AppStoreBadge } from "@/components/app-store-badge";
-import { cn, formatDate } from "@/lib/utils";
+import { asset, cn, formatDate } from "@/lib/utils";
 import { startSoundscape, type SoundId } from "@/lib/soundscapes";
 
 const JUGGLING_ICONS = [Shield, Timer, StickyNote, Wind, MessageCircle, Table2];
@@ -98,7 +98,7 @@ function PhoneShot({
 }) {
   return (
     <img
-      src={src}
+      src={asset(src)}
       alt={alt}
       width={width}
       height={height}
@@ -140,7 +140,7 @@ function Hero() {
         </div>
         <div className="relative mx-auto w-full max-w-[480px] lg:max-w-none lg:translate-y-8">
           <img
-            src="/app/hero-hand.webp"
+            src={asset("/app/hero-hand.webp")}
             alt="Hand holding the NEVER app showing 19 days and 15 hours clean"
             width={849}
             height={1200}
@@ -422,7 +422,7 @@ function Soundscapes() {
                   className="group relative flex h-[4.75rem] w-full items-center overflow-hidden rounded-full text-left sm:h-24"
                 >
                   <img
-                    src={s.src}
+                    src={asset(s.src)}
                     alt={s.alt}
                     className="absolute inset-0 size-full object-cover outline-none transition-transform duration-500 group-hover:scale-[1.03]"
                   />
@@ -540,7 +540,7 @@ function BlogPreview() {
               >
                 <div className="overflow-hidden rounded-[24px] bg-night">
                   <img
-                    src={post.cover}
+                    src={asset(post.cover)}
                     alt={post.coverAlt}
                     className="aspect-16/10 w-full object-cover outline-none transition-transform duration-500 group-hover:scale-[1.03]"
                     width={800}

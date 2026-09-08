@@ -13,3 +13,10 @@ export function formatDate(iso: string) {
     year: "numeric",
   });
 }
+
+/** Prefix public asset paths with Vite's base (needed on GitHub Pages `/never/`). */
+export function asset(path: string) {
+  if (!path || /^(https?:|data:|mailto:)/.test(path)) return path;
+  const base = import.meta.env.BASE_URL || "/";
+  return `${base}${path.replace(/^\//, "")}`;
+}

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { POSTS } from "@/data/posts";
-import { formatDate } from "@/lib/utils";
+import { asset, formatDate } from "@/lib/utils";
 import { SITE } from "@/data/site";
 
 export const Route = createFileRoute("/blog/")({
@@ -41,7 +41,7 @@ function BlogIndex() {
             <Link to="/blog/$slug" params={{ slug: post.slug }} className="group block">
               <div className="overflow-hidden rounded-[24px] bg-night">
                 <img
-                  src={post.cover}
+                  src={asset(post.cover)}
                   alt={post.coverAlt}
                   className="aspect-16/10 w-full object-cover outline-none transition-transform duration-500 group-hover:scale-[1.03]"
                   width={900}

@@ -4,9 +4,12 @@ import { routeTree } from "./routeTree.gen";
 
 let firstPaint = true;
 
+const basepath = (import.meta.env.BASE_URL || "/").replace(/\/$/, "") || undefined;
+
 export function getRouter() {
   return createRouter({
     routeTree,
+    basepath,
     defaultErrorComponent: AppErrorComponent,
     scrollRestoration: () => {
       if (firstPaint) {

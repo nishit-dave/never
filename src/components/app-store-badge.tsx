@@ -1,5 +1,5 @@
 import { APP_STORE_URL } from "@/data/site";
-import { cn } from "@/lib/utils";
+import { asset, cn } from "@/lib/utils";
 
 export function AppStoreBadge({
   className,
@@ -17,7 +17,7 @@ export function AppStoreBadge({
       className={cn("inline-flex shrink-0 transition-opacity hover:opacity-80", className)}
     >
       <img
-        src="/app/download-on-the-app-store.svg"
+        src={asset("/app/download-on-the-app-store.svg")}
         alt="Download on the App Store"
         width={Math.round(height * (284.3 / 95))}
         height={height}
