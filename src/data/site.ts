@@ -26,7 +26,6 @@ export const STATS = [
 ] as const;
 
 export const JUGGLING = [
-  { name: "Blocker", detail: "Site lists" },
   { name: "Timer", detail: "Streak days" },
   { name: "Notes", detail: "Relapse log" },
   { name: "Calm", detail: "Breathing" },
@@ -142,7 +141,7 @@ export const SOUNDSCAPES = [
 export const STORIES = [
   {
     quote:
-      "I used to bounce between a blocker, a notes app, and a breathing timer. NEVER is the first thing that actually fits the moment the urge starts.",
+      "I used to bounce between a notes app, a breathing timer, and a spreadsheet. NEVER is the first thing that actually fits the moment the urge starts.",
     name: "Arjun",
     meta: "Day 47",
   },

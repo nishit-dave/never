@@ -31,7 +31,7 @@ import { AppStoreBadge } from "@/components/app-store-badge";
 import { asset, cn, formatDate } from "@/lib/utils";
 import { startSoundscape, type SoundId } from "@/lib/soundscapes";
 
-const JUGGLING_ICONS = [Shield, Timer, StickyNote, Wind, MessageCircle, Table2];
+const JUGGLING_ICONS = [Timer, StickyNote, Wind, MessageCircle, Table2];
 const TOOL_ICONS = [Wind, Brain, MessageCircle, Shield, BookOpen, Timer];
 
 export function HomePage() {
@@ -186,15 +186,14 @@ function Problem() {
     <section className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-[clamp(1.9rem,4vw,3.2rem)] font-extrabold tracking-[-0.04em] leading-[1.05]">
-          Tired of juggling six different apps?
+          Tired of juggling five different apps?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-ink-soft">
-          A blocker for the sites. A timer for the streak. Notes for the shame.
-          A breathing app you forget. A chatbot that lectures. A spreadsheet
-          you never open.
+          A timer for the streak. Notes for the shame. A breathing app you
+          forget. A chatbot that lectures. A spreadsheet you never open.
         </p>
       </div>
-      <ul className="mx-auto mt-12 grid max-w-3xl grid-cols-3 gap-6 sm:grid-cols-6 sm:gap-4">
+      <ul className="mx-auto mt-12 grid max-w-3xl grid-cols-3 gap-6 sm:grid-cols-5 sm:gap-4">
         {JUGGLING.map((app, i) => {
           const Icon = JUGGLING_ICONS[i] ?? Shield;
           return (
