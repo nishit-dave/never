@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/blog/urge-surfing-10-minutes",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Urge surfing: how to ride out a craving in 10 minutes | NEVER",
+      "hasCanvas": false,
+      "bodyTextLen": 2563,
+      "bodyTextHash": "f9089d083234ff68bf8b86e01ed5b7ce417b555395ddaa1fa86485214fe5162b",
+      "bodyTextPrefix": "N NEVER Features Tools Stories Journal Blog FAQ Get the app BLOG",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/post.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Urge surfing: how to ride out a craving in 10 minutes | NEVER",
+      "hasCanvas": false,
+      "bodyTextLen": 2511,
+      "bodyTextHash": "a15feaf984bf2c5bd55de7593822a0ca067a96935bdc04d3ee057bc6f4d656d0",
+      "bodyTextPrefix": "N NEVER BLOG · PRACTICE · AUGUST 4, 2026 · 7 MIN Urge surfing: h",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/post-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/post.json"
+}

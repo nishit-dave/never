@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/blog",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Recovery blog — guides on quitting porn | NEVER",
+      "hasCanvas": false,
+      "bodyTextLen": 2354,
+      "bodyTextHash": "27b5c11b1cc90a3b4e99b4355e9360706352a2379d10de86b2784547f1d43697",
+      "bodyTextPrefix": "N NEVER Features Tools Stories Journal Blog FAQ Get the app FIEL",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/blog.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Recovery blog — guides on quitting porn | NEVER",
+      "hasCanvas": false,
+      "bodyTextLen": 2302,
+      "bodyTextHash": "8ffdd565d74f28501373f746676575743692e9954210c92416fb8f91ffa2878d",
+      "bodyTextPrefix": "N NEVER FIELD NOTES Recovery writing you can use the same night.",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/blog-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/blog.json"
+}

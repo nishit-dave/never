@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "NEVER — Quit porn. Keep your streak.",
+      "hasCanvas": false,
+      "bodyTextLen": 5063,
+      "bodyTextHash": "a7b708ea1e75ee191be885f2bbf1e6cd20105ca9ea0e501a38b0d3fe1db99532",
+      "bodyTextPrefix": "N NEVER Features Tools Stories Journal Blog FAQ Get the app RECO",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "NEVER — Quit porn. Keep your streak.",
+      "hasCanvas": false,
+      "bodyTextLen": 5011,
+      "bodyTextHash": "03ee9430dd03286de87b9f71a2bdbc675128ab2d83d880e824601904dd9cb0c4",
+      "bodyTextPrefix": "N NEVER RECOVERY, IN ONE PLACE QUIT HEAL GROW with Never Streak,",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
